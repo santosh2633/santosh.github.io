@@ -13,14 +13,17 @@ a{
 	text-decoration: none;
 }
 header{
-	background: #0d0d0e;
+	background: white;
 	display: flex;
 	align-items: center;
 	padding: 15px 0;
 	
 }
 header a{
-	color:white;
+	
+	font-weight: bold;
+	
+
 }
 header ul{
 	list-style: none;
@@ -31,67 +34,109 @@ header ul{
 }
 #logo{
 	margin: 0 auto;
-	font-size: 25px;
+	font-size: 35px;
+	font-family: fantasy;
+
 }
+
 #menu li{
 	padding: 10px;
+	font-size: 25px;
 
+
+
+}
+#menu li a{
+	color:blue;
+	font-family: cursive;
 }
 #social-links li{
 	padding: 10px;
+	color:red;
+
+}
+#social-links li a{
+	color:red;
 
 }
 #main{
 	display: flex;
 }
+#welcome{
+	margin-top: 50px;
+	margin-left: 350px;
+	font-family:cursive;
+}
+#paragraph{
+	color:white;
+}
 article{
 	padding: 10px;
-	background-color: rgba(0, 0, 0, 0.829);
-	color: whitesmoke;
+	
+	color: black;
 	text-justify: auto;
+	margin: 0;
+	color:black;
 }
 
 aside{
 	display: flex;
 	flex-wrap: wrap;
 	flex:0 0 20vw;
-	background: rgb(1, 5, 20);
+	background-color: white;
+	margin-top: 100px;
+	
+	margin-right: 0 ;
 }
 aside ul{
 	list-style: none;
 	padding: 0;
 }
 aside ul a{
-	color:whitesmoke;
+	color:black;
 	display: inline-block;
 	padding:10px;
-	border-bottom: 1px solid grey;
+	font-size: 20px;
+	/*border-bottom: 1px solid grey;*/
 	transition:0.5s;
+	font-family: cursive;
+	font-weight: bold;
 }
 aside ul a:hover{
 	background-color: whitesmoke;
 	color: black;
+	font-size:30px;
 	
 }
 
 aside img{
 	width: 100%;
 }
+#hello{
+	margin-top: 80px;
+	margin-left:370px;
+	font-family: cursive;
+
+}
 .services-container{
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	background-color:black;
+	margin-top: 30px;
+
+	
+
 }
+
 .service-box{
-	border: 1px solid #eee;
+	
 	padding: 10px;
 	margin-bottom: 15px;
 	flex-basis: 32%;
 	max-width: 370px;
 	display: flex;
 	flex-direction: column;
-	
+	font-family: cursive;
 	border-radius: 25px;
 
 }
@@ -106,9 +151,9 @@ aside img{
 	margin-top: auto;
 }
 .call-to-action a{
-	border: 2px solid transparent;
-	background: black;
-	color:white;
+	border: 2px solid black;
+	font-weight: bold;
+	color:black;
 	padding: 8px 13px;
 	display: block;
 
@@ -117,7 +162,8 @@ aside img{
 .call-to-action a:hover{
 	border: 2px solid grey;
 	background: transparent;
-	color:white;
+	color:black;
+	font-weight: lighter;
 }
 .service-box img{
 	width: 100%;
@@ -126,14 +172,14 @@ aside img{
 }
 
 footer{
-background-color:black;
-color:white;
+/*border:2px solid black;*/
+color:black;
 text-align:center;
 padding: 15px ;
-
+font-family: cursive;
 height: 40px;
 }
-@media screen and (max-width: 850px){
+@media(max-width: 850px){
 	.service-box{
 		flex-basis: 45%;
 
@@ -143,7 +189,7 @@ height: 40px;
 
 	}
 }
-@media screen and (max-width: 600px){
+@media(max-width: 600px){
 	#main{
 		flex-direction: column;
 	}
@@ -162,7 +208,7 @@ height: 40px;
 h2{
 	text-align: center;
 }
-@media screen and (max-width: 412px){
+@media(max-width: 412px){
 	#main{
 		flex-direction: column;
 	}
